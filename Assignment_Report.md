@@ -502,26 +502,4 @@ Quick Sort **can** be made stable (as demonstrated in Part (b) using a composite
 
 ---
 
-## 7. GitHub Repository Structure
 
-Create a repository (e.g., `logistics-package-sorting`) and upload the following structure:
-
-```
-logistics-package-sorting/
-├── README.md                      (overview + how to compile & run)
-├── src/
-│   ├── merge_sort.c
-│   ├── quick_sort_unstable.c
-│   └── quick_sort_stable.c
-├── data/
-│   └── input.txt                  (package IDs & weights)
-├── output/
-│   ├── output_merge_sort.txt
-│   ├── output_quick_sort_unstable.txt
-│   └── output_quick_sort_stable.txt
-├── docs/
-│   └── Assignment_Report.md       (this combined document)
-└── LICENSE
-```
-
-Suggested `README.md` contents: project title, problem statement, build instructions (`gcc -O2 -Wall -o <name> <file>.c`), run instructions (`./<name>`), and a short summary pointing to `docs/Assignment_Report.md` for the full analysis, comparison table, and conclusion.
