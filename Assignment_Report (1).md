@@ -93,26 +93,3 @@ Quick Sort *can* be made stable using a composite (weight, original_pos) key, an
 
 ---
 
-## 7. GitHub Repository Structure
-
-Suggested repository layout:
-
-```
-logistics-package-sorting/
-├── README.md                      (overview + how to compile & run)
-├── src/
-│   ├── merge_sort.c
-│   ├── quick_sort_unstable.c
-│   └── quick_sort_stable.c
-├── data/
-│   └── input.txt                  (package IDs & weights)
-├── output/
-│   ├── output_merge_sort.txt
-│   ├── output_quick_sort_unstable.txt
-│   └── output_quick_sort_stable.txt
-├── docs/
-│   └── Assignment_Report.md       (this report)
-└── LICENSE
-```
-
-`README.md` should include: project title, problem statement, build instructions (`gcc -O2 -Wall -o <name> <file>.c`), run instructions (`./<name>`), and a pointer to `docs/Assignment_Report.md` for the full analysis, comparison table, and conclusion.
