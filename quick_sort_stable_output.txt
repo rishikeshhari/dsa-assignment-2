@@ -1,0 +1,36 @@
+=========================================
+ QUICK SORT (MODIFIED, stable-order preserved) - Package Weight Sorting
+=========================================
+Original Order : P1(w=20,idx=0) P2(w=15,idx=1) P3(w=20,idx=2) P4(w=10,idx=3) P5(w=15,idx=4) P6(w=20,idx=5) P7(w=25,idx=6) P8(w=10,idx=7) 
+
+Step 1: Partitioning arr[0..7], pivot = P8(w=10,idx=7)
+           Result -> : P4(w=10,idx=3) P8(w=10,idx=7) P3(w=20,idx=2) P1(w=20,idx=0) P5(w=15,idx=4) P6(w=20,idx=5) P7(w=25,idx=6) P2(w=15,idx=1) 
+
+Step 2: Partitioning arr[2..7], pivot = P2(w=15,idx=1)
+           Result -> : P2(w=15,idx=1) P1(w=20,idx=0) P5(w=15,idx=4) P6(w=20,idx=5) P7(w=25,idx=6) P3(w=20,idx=2) 
+
+Step 3: Partitioning arr[3..7], pivot = P3(w=20,idx=2)
+           Result -> : P1(w=20,idx=0) P5(w=15,idx=4) P3(w=20,idx=2) P7(w=25,idx=6) P6(w=20,idx=5) 
+
+Step 4: Partitioning arr[3..4], pivot = P5(w=15,idx=4)
+           Result -> : P5(w=15,idx=4) P1(w=20,idx=0) 
+
+Step 5: Partitioning arr[6..7], pivot = P6(w=20,idx=5)
+           Result -> : P6(w=20,idx=5) P7(w=25,idx=6) 
+
+=========================================
+Final Sorted Order (by weight, ties broken by arrival order):
+Sorted: P4(w=10,idx=3) P8(w=10,idx=7) P2(w=15,idx=1) P5(w=15,idx=4) P1(w=20,idx=0) P3(w=20,idx=2) P6(w=20,idx=5) P7(w=25,idx=6) 
+
+Total comparisons performed : 18
+Stability check (equal weights keep original order): PASSED - STABLE (order preserved)
+
+Detailed final list with original index (for verification):
+  P4  weight=10  original_index=3
+  P8  weight=10  original_index=7
+  P2  weight=15  original_index=1
+  P5  weight=15  original_index=4
+  P1  weight=20  original_index=0
+  P3  weight=20  original_index=2
+  P6  weight=20  original_index=5
+  P7  weight=25  original_index=6

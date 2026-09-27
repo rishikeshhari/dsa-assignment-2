@@ -1,0 +1,33 @@
+=========================================
+ QUICK SORT (standard/unmodified) - Package Weight Sorting
+=========================================
+Original Order : P1(20) P2(15) P3(20) P4(10) P5(15) P6(20) P7(25) P8(10) 
+
+Step 1: Partitioning arr[0..7], pivot = P8(10)
+           Result -> : P4(10) P8(10) P3(20) P1(20) P5(15) P6(20) P7(25) P2(15) 
+
+Step 2: Partitioning arr[2..7], pivot = P2(15)
+           Result -> : P5(15) P2(15) P3(20) P6(20) P7(25) P1(20) 
+
+Step 3: Partitioning arr[4..7], pivot = P1(20)
+           Result -> : P3(20) P6(20) P1(20) P7(25) 
+
+Step 4: Partitioning arr[4..5], pivot = P6(20)
+           Result -> : P3(20) P6(20) 
+
+=========================================
+Final Sorted Order (by weight):
+Sorted: P4(10) P8(10) P5(15) P2(15) P3(20) P6(20) P1(20) P7(25) 
+
+Total comparisons performed : 16
+Stability check (equal weights keep original order): FAILED - NOT STABLE
+
+Detailed final list with original index (for verification):
+  P4  weight=10  original_index=3
+  P8  weight=10  original_index=7
+  P5  weight=15  original_index=4
+  P2  weight=15  original_index=1
+  P3  weight=20  original_index=2
+  P6  weight=20  original_index=5
+  P1  weight=20  original_index=0
+  P7  weight=25  original_index=6
